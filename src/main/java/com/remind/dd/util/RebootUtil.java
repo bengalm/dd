@@ -142,7 +142,7 @@ public class RebootUtil {
         String sign = map.get("sign");
         String timestamp = map.get("timestamp");
         StringBuffer stringBuffer = new StringBuffer();
-        String robotUrl = stringBuffer.append("https://oapi.dingtalk.com/robot/send?access_token=ae35d2cb8bb37c1ccdf94265ea2467a153fb92298c3ff442ca79ef2a53bffd1e").append("&timestamp=").append(timestamp).append("&sign=").append(sign).toString();
+        String robotUrl = stringBuffer.append("https://oapi.dingtalk.com/robot/send?access_token=token").append("&timestamp=").append(timestamp).append("&sign=").append(sign).toString();
         return sendPost(robotUrl, message);
     }
 
